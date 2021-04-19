@@ -56,7 +56,7 @@ let Tokyo = {
     avgCookieSale : 1.2,
     cookiesPerHour : [],
     customerPerHour : [],
-    avgCustomerConsuming : 0,
+    Total : 0,
     getcookies : function(){
         for (let i = 0; i< workHours.length; i++) {
             let hourlyCustomers = randomNoOfCustomers( this.min, this.max );
@@ -103,7 +103,7 @@ let Dubai = {
     avgCookieSale : 3.7,
     cookiesPerHour : [],
     customerPerHour : [],
-    avgCustomerConsuming : 0,
+    Total : 0,
     getcookies : function(){
         for (let i = 0; i< workHours.length; i++) {
             let hourlyCustomers = randomNoOfCustomers( this.min, this.max );
@@ -151,7 +151,7 @@ let Paris = {
     avgCookieSale : 2.3,
     cookiesPerHour : [],
     customerPerHour : [],
-    avgCustomerConsuming : 0,
+    Total : 0,
     getcookies : function(){
         for (let i = 0; i< workHours.length; i++) {
             let hourlyCustomers = randomNoOfCustomers( this.min, this.max );
@@ -199,7 +199,7 @@ let Lima = {
     avgCookieSale : 4.6,
     cookiesPerHour : [],
     customerPerHour : [],
-    avgCustomerConsuming : 0,
+    Total : 0,
     getcookies : function(){
         for (let i = 0; i< workHours.length; i++) {
             let hourlyCustomers = randomNoOfCustomers( this.min, this.max );
