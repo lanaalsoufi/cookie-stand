@@ -11,6 +11,10 @@ width: 960px;
 text-align: center;
 }
 
+
+header nav {
+    text-align: right;
+}
 body {
 background-color: rgb(121, 201, 247);
 font-family: 'Merriweather', serif;
