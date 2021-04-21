@@ -1,6 +1,5 @@
 table {
     border-collapse: collapse;
-    text-align: center;
   }
   
   td, th {
@@ -9,6 +8,48 @@ table {
   }
   
   th {
-    background-color: #325288;
+    background-color: #313336;
     color: #fff;
+
+    margin: auto;
+
   }
+
+  header h1 {
+    background-color: rgb(153, 13, 13);
+    text-align: center;
+    color: rgb(255, 254, 254);
+
+
+  }
+
+  button:hover{
+    color:  rgb(153, 13, 13);
+    background-color: #ffffff;
+
+    }
+
+    input {
+      margin-bottom: 7px;
+      height: 20px;
+    }
+
+      button {
+        border: none;
+        height: 30px;
+        width: 120px;
+        background-color: #6e6b6b;
+        color: white;
+        border-radius: 7px;
+        }
+
+        
+        label {
+          font-size: 20px;
+          }
+
+          form  {
+            font-size: 25px;
+       }
+
+        
