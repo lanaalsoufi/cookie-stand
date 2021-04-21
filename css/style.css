@@ -9,6 +9,8 @@ header h1 {
 margin: auto;
 width: 960px; 
 text-align: center;
+background-color: rgb(153, 13, 13);
+color: rgb(255, 254, 254);
 }
 
 
@@ -16,18 +18,33 @@ header nav {
     text-align: right;
 }
 body {
-background-color: rgb(121, 201, 247);
 font-family: 'Merriweather', serif;
 }
 
 footer {
 text-align: center;
-background-color: #262627 ;
+background-color: #313336;
 color: rgb(255, 254, 254);
 }
 
-a {
+ header nav a {
 text-decoration: none;
 padding: 10px;
 text-transform: uppercase;
+color: #000;
+
 }
+ footer nav a {
+    color: rgb(255, 254, 254);
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+ }
+
+ .container{
+    max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
