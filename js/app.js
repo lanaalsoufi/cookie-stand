@@ -3,6 +3,7 @@ let workHours= ['6am', '7am', '8am','9am','10am','11am','12am' ,'1pm', '2pm', '3
 
 const parentElement = document.getElementById( 'Sales' );
 const tableElement = document.getElementById( 'Table' );
+const nBranch = document.getElementById('nBranch');
 
 function City ( name, min, max, avgCookieSale ) {
     this.name = name;
@@ -25,12 +26,7 @@ function City ( name, min, max, avgCookieSale ) {
       this.cookiesPerHour.push( cookiesNo );
       this.customerPerHour.push( hourlyCustomers );
     }
-    console.log(this.cookiesPerHour, this.Total);
-
-
-
-    
-  
+    console.log(this.cookiesPerHour, this.Total)
   };
   
   City.prototype.render = function () {
@@ -132,6 +128,26 @@ Lima.getCookies();
 Lima.render();
 
 footer();
+
+
+nBranch.addEventListener('Save', eventButton);
+
+function eventButton(event) {
+    event.preventDefault();
+    const branch = event.target.branch.value;
+    const min = event.target.min.value;
+    const max = event.target.max.value;
+    const avgCookieSale = event.target.avgCookieSale.value;
+
+    let newOne = new City(branch, min, max, avgCookieSale);
+    let numOfRow= tableElement.rows.length;
+    tableElement.deleteRow(numOfRow - 1);
+    newOne.getCookies();
+    newOne.render();
+    nBranch.reset();
+    footerRender();
+}
+
 
 
 // let Seattle = {
