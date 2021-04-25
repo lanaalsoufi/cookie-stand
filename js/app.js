@@ -134,16 +134,16 @@ nBranch.addEventListener('submit', eventButton);
 
 function eventButton(event) {
     event.preventDefault();
-    const branch = event.target.branch.value;
-    const min = event.target.min.value;
-    const max = event.target.max.value;
-    const avgCookieSale = event.target.avgCookieSale.value;
+    console.log(event.target.branch.value);
+    let branch = event.target.branch.value;
+    let min = event.target.min.value;
+    let max = event.target.max.value;
+    let avgCookieSale = event.target.avgCookieSale.value;
 
     let newOne = new City(branch, min, max, avgCookieSale);
     let numOfRow= tableElement.rows.length;
     tableElement.deleteRow(numOfRow - 1);
-    newOne.cookiesPerHour();
-    newOne.customerPerHour();
+    newOne.getCookies();
     newOne.render();
     nBranch.reset();
     footer();
