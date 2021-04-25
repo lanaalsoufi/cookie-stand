@@ -8,40 +8,33 @@
     <link rel="stylesheet" href="./css/table.css">
 </head>
 <body>
-    <form>
-        <fieldset>
-            <legend>
-    <form >New branches</form>
-
-    <form id = "nBranch"></form>
-    <label for ="branch">branch :</label>
-    <input type="text"id="newBranch" name="nBranch">
-   
-    <label for ="min"> Min Customer:</label>
-    <input type="text"id="newBranch" name="newBranch" min=0>
-
-    <label for ="max">Max Customer:</label>
-    <input type="text"id="newBranch" name="newBranch" min=0>
-
-    <label for ="avgCookieSale"> Average Cookies:</label>
-    <input type="text"id="newBranch" name="newBranch"min=0  step="0.01">
-
-    <input type="Submit" value="Save">
-   </legend>
-   </fieldset>
-   </form>
-
     <header>
+        <a href="index.html"><button>HOME PAGE</button></a>
         <h1>Salmon's Cookie Sales Data Department</h1>
-    </header>
-    <div id="Sales"></div>
-    <table id="Table"></table>
-    <a href="index.html"><button>HOME PAGE</button></a>
-    <header>
-
-    </header>
+   
     <main>
+            <fieldset>
+                <legend>Add New branch City Name</legend>
 
+        <form id = "nBranch">
+        <label for ="branch">branch name :</label>
+        <input required id="branch" type="text">
+       
+        <label for ="min"> Min Customers per hour:</label>
+        <input required id="min" type="number" min=0>
+    
+        <label for ="max">Max Customers per hour:</label>
+        <input required id="max" type="number" max=0>
+    
+        <label for ="avgCookieSale"> Average Cookies:</label>
+        <input required id="avgCookieSale" type="number" min=0 step="0.1">
+        <br>
+        <button type="submit">Submit</button>
+        </form>
+       </fieldset>
+
+        <div id="Sales"></div>
+        <table id="Table"></table>
     </main>
     <footer>
         <script src="./js/app.js"></script>

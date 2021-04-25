@@ -130,7 +130,7 @@ Lima.render();
 footer();
 
 
-nBranch.addEventListener('Save', eventButton);
+nBranch.addEventListener('submit', eventButton);
 
 function eventButton(event) {
     event.preventDefault();
@@ -142,10 +142,11 @@ function eventButton(event) {
     let newOne = new City(branch, min, max, avgCookieSale);
     let numOfRow= tableElement.rows.length;
     tableElement.deleteRow(numOfRow - 1);
-    newOne.getCookies();
+    newOne.cookiesPerHour();
+    newOne.customerPerHour();
     newOne.render();
     nBranch.reset();
-    footerRender();
+    footer();
 }
 
 
