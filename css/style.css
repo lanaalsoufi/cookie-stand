@@ -6,11 +6,13 @@ width: 20%;
 }
 
 header h1 {
-margin: auto;
+margin: 30px;
 width: 960px; 
 text-align: center;
-background-color: rgb(153, 13, 13);
+background-color:#B38481;
 color: rgb(255, 254, 254);
+position: relative;
+left: 150px;
 }
 
 
@@ -23,7 +25,7 @@ font-family: 'Merriweather', serif;
 
 footer {
 text-align: center;
-background-color: #313336;
+background-color: #7F5A58;
 color: rgb(255, 254, 254);
 }
 
@@ -42,9 +44,90 @@ color: #000;
 
  }
 
- .container{
-    max-width: 1000px;
-  position: relative;
-  margin: auto;
+.Navigator {
+   position: relative;
+   right: 55px;
+   margin: 25px;
 }
 
+
+#Sales {
+   color: #7F5A58;
+   position: relative;
+   right: 5px;
+   bottom: 27px;
+}
+
+
+ .all  {
+   position: relative;
+   width: 35%;
+   height: 1px;
+   margin: auto;
+}
+
+   
+   .city {
+      display: grid;
+      grid-template-columns: repeat(5, 5fr);
+      gap: 20px;
+      font-family: 'Merriweather', serif;
+}
+
+.display{
+   border: 2px solid #B38481;
+   text-transform: capitalize;
+   font-size: 16px;
+   background-color :#FAEBD7;
+   color: #7F5A58;
+   padding: 2px;
+}
+
+#cityPic {
+   width: 100%;
+   }
+
+   main {
+      width: 90%;
+      margin: auto;
+      background-color:#FAEBD7;
+      border: 1px solid #5f5e61;
+  }
+
+  #pic1 {
+     position: relative;
+     left :300px;
+     top: 1300px;
+  }
+
+  #pic2 {
+     position:relative;
+     left : 350px;
+     top: 400px;
+  }
+
+  .mainpic {
+     width: 100%;
+  }
+  
+  #pic4 {
+     position: relative;
+     left: 350px;
+     bottom: 700px;
+  }
+ #pic6 {
+    position: relative;
+    right: 100px;
+    bottom: 1425px;
+ }
+
+#pic5 {
+   position: relative;
+   right: 100px;
+   bottom: 590px;
+}
+#pic3 {
+   position: relative;
+   top :500px;
+   right: 70px;
+}

@@ -8,15 +8,15 @@ table {
   }
   
   th {
-    background-color: #313336;
-    color: #fff;
+    background-color: #FAEBD7;
+    color :#B38481;
 
     margin: auto;
 
   }
 
   header h1 {
-    background-color: rgb(153, 13, 13);
+    background-color: #B38481;
     text-align: center;
     color: rgb(255, 254, 254);
 
@@ -24,9 +24,9 @@ table {
   }
 
   button:hover{
-    color:  rgb(153, 13, 13);
+    color:  #B38481;
     background-color: #ffffff;
-
+    position: relative;
     }
 
     input {
@@ -38,7 +38,7 @@ table {
         border: none;
         height: 30px;
         width: 120px;
-        background-color: #6e6b6b;
+        background-color:#B38481;
         color: white;
         border-radius: 7px;
         }
